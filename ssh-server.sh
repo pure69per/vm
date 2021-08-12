@@ -18,7 +18,7 @@ echo -e "$SSH_PASSWORD\n$SSH_PASSWORD" | sudo passwd "$USER"
 
 rm -f .ngrok.log
 ./ngrok authtoken "$NGROK_TOKEN"
-./ngrok tcp 22 --log ".ngrok.log" &
+./ngrok -region ap tcp 22 --log ".ngrok.log" &
 
 sleep 10
 
