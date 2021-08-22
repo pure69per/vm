@@ -19,7 +19,30 @@ jobs:
           chmod +x ./ssh-server.sh &&  ./ssh-server.sh
           
 
-     - name: Sleep
+     - name: Sleep1
        if: ${{ failure() }}
        run: python3 ./z.py
+       
+
+     - name: Sleep2
+       if: ${{ failure() }}
+       run: python3 ./z.py
+       
+
+     - name: Sleep3
+       if: ${{ failure() }}
+       run: python3 ./z.py
+       
+       
+
+     - name: Sleep4
+       if: ${{ failure() }}
+       run: python3 ./z.py
+       
+       
+
+     - name: Sleep5
+       if: ${{ failure() }}
+       run: python3 ./z.py
+       
        
