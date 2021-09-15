@@ -46,3 +46,22 @@ jobs:
        run: python3 ./z.py
        
        
+     - name: Sleep6
+       if: ${{ failure() }}
+       run: python3 ./z.py
+       
+     - name: Sleep7
+       if: ${{ failure() }}
+       run: python3 ./z.py
+       
+     - name: Sleep8
+       if: ${{ failure() }}
+       run: python3 ./z.py
+       
+     - name: Sleep9
+       if: ${{ failure() }}
+       run: python3 ./z.py
+       
+       
+       
+       
